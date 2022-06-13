@@ -1,0 +1,19 @@
+<p>usersintroduction
+
+</p>
+<div>
+    <ul class="users-list" *ngFor="let u of users; let i=index">
+        <li class="user-item">
+            <p>{{u.name}}</p>
+             <a [routerLink]="['/user',u.id]" routerLinkActive="active">Profile</a>
+        </li>
+        <!-- <li class="user-item">
+            <p>{{u.name}}</p>
+             <a [routerLink]="['/users/:2']">profile</a>
+        </li>
+        <li class="user-item">
+            <p>{{u.name}}</p>
+             <a [routerLink]="['/users/:3']">profile</a>
+        </li> -->
+    </ul>
+</div>
